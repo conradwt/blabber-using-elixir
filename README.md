@@ -107,7 +107,7 @@ The purpose of this repository is to provide a very simple example of hot code l
 11. In a terminal, create a named node called "dog" using Elixir Interactove Shell (iex) command:
 
     ```
-    $ iex --sname "dog"
+    $ iex --sname dog
     ```
     
 12. Load and compile the Babbler module:
@@ -125,7 +125,7 @@ The purpose of this repository is to provide a very simple example of hot code l
 14. In a new terminal, create a named node called "bird" using Elixir Interactove Shell (iex) command:
 
     ```
-    $ iex --sname "bird"
+    $ iex --sname bird
     ```
     
 15. Let's ping the node named "dog" from the "bird node":
