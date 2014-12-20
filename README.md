@@ -70,7 +70,7 @@ The purpose of this repository is to provide a very simple example of hot code l
     Note:  We are saving the pid so that we will have a reference to the running
            process in order to stop it.
       
-7.  Let's change the running application without stopping the running process by modifying babbler.ex as follows in the editor of your choice: 
+7.  Let's change the running application without stopping the running process by modifying Blabber.ex as follows in the editor of your choice: 
 
     Change:
     
@@ -110,7 +110,7 @@ The purpose of this repository is to provide a very simple example of hot code l
     $ iex --sname dog
     ```
     
-12. Load and compile the Babbler module:
+12. Load and compile the Blabber module:
 
     ```
     iex> c("lib/blabbler.ex")
@@ -119,7 +119,7 @@ The purpose of this repository is to provide a very simple example of hot code l
 13. Run the application:
 
     ```
-    iex> pid = Babbler.start
+    iex> pid = Blabber.start
     ```
 
 14. In a new terminal, create a named node called "bird" using Elixir Interactove Shell (iex) command:
@@ -163,16 +163,16 @@ The purpose of this repository is to provide a very simple example of hot code l
     [:"dog@your_machine_name"]
     ```
 
-18. In the "dog" node terminal, execute the following with Elixir Interactive Shell (iex) to load the Babbler module within all nodes on our local area network (LAN):
+18. In the "dog" node terminal, execute the following with Elixir Interactive Shell (iex) to load the Blabber module within all nodes on our local area network (LAN):
 
     ```
     iex> :c.nl(Blabber)
     ```
     
-19. In the "bird" node terminal, let's execute the Babbler's start function:
+19. In the "bird" node terminal, let's execute the Blabber's start function:
 
     ```
-    iex> pid = Babbler.start
+    iex> pid = Blabber.start
     ```
     
     Note:  You should see this executing within the terminal for the "bird" node.  If 
@@ -221,7 +221,7 @@ The purpose of this repository is to provide a very simple example of hot code l
 
 Bug reports and feature requests can be filed for the cassandra-example-using-rails project here:
 
-* [File Bug Reports and Features](https://github.com/conradwt/babbler-using-elixir/issues)
+* [File Bug Reports and Features](https://github.com/conradwt/Blabber-using-elixir/issues)
 
 ## Contact
 
