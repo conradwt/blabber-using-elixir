@@ -212,7 +212,7 @@ The purpose of this repository is to provide a very simple example of hot code l
     iex> :c.nl(Blabber)
     ```
     
-    Note:  You should see "hey" with being displayed with the execution of both "dog" and "bird" nodes.  Very very
+    Note:  You should see "hey" being displayed within the execution of both "dog" and "bird" nodes.  Very very
            cool stuff and please give yourself a pat on the back for completing this tutorial.
 
 ## References
