@@ -67,10 +67,8 @@ The purpose of this repository is to provide a very simple example of hot code l
     iex> pid = Blabber.start
     ```
     
-    ```
     Note:  We are saving the pid so that we will have a reference to the running
            process in order to stop it.
-    ```
       
 7.  Let's change the running application without stopping the running process by modifying babbler.ex as follows in the editor of your choice: 
 
@@ -92,10 +90,8 @@ The purpose of this repository is to provide a very simple example of hot code l
     iex> c("lib/blabber.ex")
     ```
     
-    ```
     Note:  You should now see the "howdy!!!" being displayed within the running
            process. Very cool!!!
-    ```
            
 9.  Now, let's stop the process:
 
