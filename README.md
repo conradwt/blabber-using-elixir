@@ -11,8 +11,8 @@ The purpose of this repository is to provide a very simple example of hot code l
 
 - If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/elixir). (Tag 'elixir')
 - If you'd like to **ask a general question**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/elixir).
-- If you **found a bug**, open an issue.
-- If you **have a feature request**, open an issue.
+- If you **found a bug**, [open an issue](https://github.com/conradwt/blabber-using-elixir/issues).
+- If you **have a feature request**, [open an issue](https://github.com/conradwt/blabber-using-elixir/issues).
 - If you **want to contribute**, submit a pull request.
 
 ## Let's Code
