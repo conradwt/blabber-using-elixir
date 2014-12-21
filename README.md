@@ -5,7 +5,7 @@ The purpose of this repository is to provide a very simple example of hot code l
 
 ## Requirements
 
-- Elixir 1.0.2
+- Elixir 1.0.2 or higher
 
 ## Communication
 
@@ -15,7 +15,7 @@ The purpose of this repository is to provide a very simple example of hot code l
 - If you **have a feature request**, [open an issue](https://github.com/conradwt/blabber-using-elixir/issues).
 - If you **want to contribute**, submit a pull request.
 
-## Let's Code
+## Let's Code!!!
 
 1.  Open a new terminal
 
@@ -52,7 +52,7 @@ The purpose of this repository is to provide a very simple example of hot code l
 4.  In the terminal, compile the project:
 
     ```
-    mix compile
+    $ mix compile
     ```
     
 5.  Open the compiled module inside the Elixir Interactove Shell (iex):
