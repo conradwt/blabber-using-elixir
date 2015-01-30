@@ -1,7 +1,7 @@
 Blabber Using Elixir
 ====================
 
-The purpose of this repository is to provide a very simple example of hot code loading and communicating between Erlang processes using the Elixir Language.  This example was based on an awesome video presentation by Bryan Hunter and you can watch the very same video which inspired me to create this repository.
+The purpose of this step by step tutorial is to provide a very simple example of hot code loading and communicating between Erlang processes using the Elixir Language.  This example was based on an awesome video presentation by Bryan Hunter and you can watch the very same video which inspired me to create this repository.
 
 ## Requirements
 
