@@ -5,7 +5,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 ## Requirements
 
-- Elixir 1.0.2 or higher
+- Elixir 1.3.2 or higher
 
 ## Communication
 
@@ -28,33 +28,33 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 3.  Modify the file blabber.ex located in the lib directory to look like the
     following:
-    
+
     ```elixir
     defmodule Blabber do
-  
+
       def start do
         spawn( __MODULE__, :loop, [1] )
       end
-  
+
       def loop( count ) do
         receive do
           :done -> IO.puts( "Closing" )
                   :ok
-        after 
+        after
           2000 -> IO.puts( "Loop #{node()} with #{count} says hello" )
-                  Blabber.loop( count + 1 ) 
+                  Blabber.loop( count + 1 )
         end
       end
 
     end
     ```
-    
+
 4.  In the terminal, compile the project:
 
     ```
     $ mix compile
     ```
-    
+
 5.  Open the compiled module inside the Elixir Interactove Shell (iex):
 
     ```
@@ -66,36 +66,36 @@ The purpose of this step by step tutorial is to provide a very simple example of
     ```
     iex> pid = Blabber.start
     ```
-    
+
     Note:  We are saving the pid so that we will have a reference to the running
            process in order to stop it.
-      
-7.  Let's change the running application without stopping the running process by modifying Blabber.ex as follows in the editor of your choice: 
+
+7.  Let's change the running application without stopping the running process by modifying Blabber.ex as follows in the editor of your choice:
 
     Change:
-    
+
     ```
     hello
     ```
 
-    to 
-    
+    to
+
     ```
     howdy!!!
     ```
-    
+
 8.  Recompile our application within the Elixir Interactove Shell (iex):
 
     ```
     iex> c("lib/blabber.ex")
     ```
-    
+
     Note:  You should now see the "howdy!!!" being displayed within the running
            process. Very cool!!!
-           
+
 9.  Now, let's stop the process:
 
-    iex > send pid, :done 
+    iex > send pid, :done
 
 10. Exit Elixir Interactove Shell (iex) by typing the following on your keyboard:
 
@@ -103,19 +103,19 @@ The purpose of this step by step tutorial is to provide a very simple example of
     Control-C
     Control-C
     ```
-    
+
 11. In a terminal, create a named node called "dog" using Elixir Interactove Shell (iex) command:
 
     ```
     $ iex --sname dog
     ```
-    
+
 12. Load and compile the Blabber module:
 
     ```
     iex> c("lib/blabbler.ex")
     ```
-    
+
 13. Run the application:
 
     ```
@@ -127,38 +127,38 @@ The purpose of this step by step tutorial is to provide a very simple example of
     ```
     $ iex --sname bird
     ```
-    
+
 15. Let's ping the node named "dog" from the "bird node":
 
     ```
     iex> :net_adm.ping( :"dog@your_machine_name" )
     ```
-    
+
     Note:  your_machine_name here will be different.  Just replace the above with
            the appropriate name.
-           
-16. Switch to the terminal where we are running the "dog" node and list all the 
+
+16. Switch to the terminal where we are running the "dog" node and list all the
     nodes that we can see:
-    
+
     ```
     iex> Node.list
     ```
-    
+
     Note:  This should display something similar to the following:
-    
+
     ```
     [:"bird@your_machine_name"]
     ```
-    
-17. Switch to the terminal where we are running the "bird" node and list all the 
+
+17. Switch to the terminal where we are running the "bird" node and list all the
     nodes that we can see:
-    
+
     ```
     iex> Node.list
     ```
-    
+
     Note:  This should display something similar to the following:
-    
+
     ```
     [:"dog@your_machine_name"]
     ```
@@ -168,46 +168,46 @@ The purpose of this step by step tutorial is to provide a very simple example of
     ```
     iex> :c.nl(Blabber)
     ```
-    
+
 19. In the "bird" node terminal, let's execute the Blabber's start function:
 
     ```
     iex> pid = Blabber.start
     ```
-    
-    Note:  You should see this executing within the terminal for the "bird" node.  If 
+
+    Note:  You should see this executing within the terminal for the "bird" node.  If
            we didn't perform step (18), it would generate an error message similar
            to the following:
-           
+
            ```elixir
            ** (UndefinedFunctionError) undefined function: Blabber.start/0 (module Blabber is not available)
                Blabber.start()
            ```
-           
+
 20. Now, change blabbler.ex as follows with the text editor of your choosing by doing the following:
 
     Change
-    
+
     ```
     howdy
     ```
-    
+
     to
-    
+
     ```
     hey
     ```
-    
+
     Note:  Please don't forget to save the file.
-    
+
 21. In the "dog" node terminal, compile the module and broadcast the changes to the other nodes on your local
     area network:
-    
+
     ```
     iex> c("lib/blabber.ex")
     iex> :c.nl(Blabber)
     ```
-    
+
     Note:  You should see "hey" being displayed within the execution of both "dog" and "bird" nodes.  Very very
            cool stuff and please give yourself a pat on the back for completing this tutorial.
 
@@ -237,4 +237,4 @@ This repository is released under the [MIT License](http://www.opensource.org/li
 
 ## Copyright
 
-&copy; Copyright 2014 Conrad Taylor. All Rights Reserved.
+&copy; Copyright 2014 - 2016 Conrad Taylor. All Rights Reserved.
