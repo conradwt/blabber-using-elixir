@@ -5,7 +5,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 ## Requirements
 
-- Elixir 1.3.2 or higher
+- Elixir 1.6.1 or higher
 
 ## Communication
 
@@ -237,4 +237,4 @@ This repository is released under the [MIT License](http://www.opensource.org/li
 
 ## Copyright
 
-&copy; Copyright 2014 - 2016 Conrad Taylor. All Rights Reserved.
+&copy; Copyright 2014 - 2018 Conrad Taylor. All Rights Reserved.
