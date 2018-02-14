@@ -64,7 +64,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 6.  Now, let's run the application:
 
     ```
-    iex> pid = Blabber.start
+    iex> pid = Blabber.start()
     ```
 
     Note:  We are saving the pid so that we will have a reference to the running
@@ -95,7 +95,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 9.  Now, let's stop the process:
 
-    iex > send pid, :done
+    iex > send(pid, :done)
 
 10. Exit Elixir Interactove Shell (iex) by typing the following on your keyboard:
 
@@ -119,7 +119,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 13. Run the application:
 
     ```
-    iex> pid = Blabber.start
+    iex> pid = Blabber.start()
     ```
 
 14. In a new terminal, create a named node called "bird" using Elixir Interactove Shell (iex) command:
@@ -141,7 +141,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     nodes that we can see:
 
     ```
-    iex> Node.list
+    iex> Node.list()
     ```
 
     Note:  This should display something similar to the following:
@@ -154,7 +154,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
     nodes that we can see:
 
     ```
-    iex> Node.list
+    iex> Node.list()
     ```
 
     Note:  This should display something similar to the following:
@@ -172,7 +172,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 19. In the "bird" node terminal, let's execute the Blabber's start function:
 
     ```
-    iex> pid = Blabber.start
+    iex> pid = Blabber.start()
     ```
 
     Note:  You should see this executing within the terminal for the "bird" node.  If
