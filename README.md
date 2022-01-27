@@ -4,7 +4,7 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 ## Requirements
 
-- Elixir 1.6.1 or higher
+- Elixir 1.13.2 or higher
 
 - Erlang 24.2.1
 
