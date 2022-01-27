@@ -4,9 +4,9 @@ The purpose of this step by step tutorial is to provide a very simple example of
 
 ## Requirements
 
-- Elixir 1.13.2 or higher
+- Elixir 1.13.2 or newer
 
-- Erlang 24.2.1
+- Erlang 24.2.1 or newer
 
 ## Communication
 
